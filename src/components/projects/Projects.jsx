@@ -4,16 +4,22 @@ import './projects.css';
 
 const projects = [
     {
-      title: 'Project 1',
-      description: 'This is a brief description of Project 1.',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      link: 'https://github.com/username/project1',
+      title: 'Facial Emotion Recognition',
+      description: 'Given a human face image, detecting the emotion expressed in the face. Implemented using Machine Learning, Deep Learning, HaarCascade OpenCV',
+      technologies: ['Deep Learning', 'Neural Networks', 'OpenCV', 'Tensorflow', 'Python'],
+      link: 'https://github.com/kowshik4/FacialEmotionRecognition',
     },
     {
-      title: 'Project 2',
-      description: 'This is a brief description of Project 2.',
-      technologies: ['Java', 'Spring Boot', 'MySQL'],
-      link: 'https://github.com/username/project2',
+      title: 'Vehicle License Plate Recognition',
+      description: 'Created a project capable of license plate detection, employing computer vision techniques to extract the license plate number.',
+      technologies: ['Deep Learning', 'Computer Vision', 'Python', 'OpenCV'],
+      link: 'https://github.com/kowshik4/License_plates',
+    },
+    {
+      title: 'Techtrade',
+      description: 'Developed a website for trading items like phones,laptops and other gadgets among users. Implemented using Javascript, nodeJS, ExpressJs and mongodb.',
+      technologies: ['JavaScript', 'NodeJS', 'ExpressJS', 'MongoDB'],
+      link: 'https://github.com/kowshik4/Techtrade',
     },
     // Add more projects as needed
   ];
@@ -21,9 +27,10 @@ const projects = [
 
   const ProjectCard = ({ project }) => (
     <div className="project-card">
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
-      <p><strong>Technologies:</strong> {project.technologies.join(', ')}</p>
+      <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+      <h3>{project.title}</h3></a><br />
+      <br></br><p>{project.description}</p>
+      <p><strong>Technologies:</strong> {project.technologies.join(', ')}</p><br />
       <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
         View Project
       </a>

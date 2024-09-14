@@ -1,3 +1,24 @@
+.projects {
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.projects__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font--medium);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.projects__subtitle {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font--normal);
+  margin-bottom: var(--mb-1);
+  text-align: center;
+}
+
 .projects-container {
     grid-template-columns: repeat(2, 350px);
     padding: 20px;
@@ -7,7 +28,6 @@
 .projects-grid {
     display: grid;
     align-items: flex-start;
-    row-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
@@ -22,13 +42,14 @@
 .project-link {
     display: inline-block;
     margin-top: 10px;
-    color: #007bff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
   }
   
 .project-link:hover {
-    text-decoration: underline;
+    color: #007bff;
   }
   
 
