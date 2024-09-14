@@ -40,8 +40,8 @@ const projects = [
 const Projects = () => {
     return (
         <section className='projects section' id='projects'>      
-            <h2 className='projects__title'>Projects</h2>
-            <span className='projects__subtitle'>Technology</span>
+            <h2 className='section__title'>Projects</h2>
+            <span className='section__subtitle'>Technology</span>
             <div className="projects__container container grid">
             {projects.map((project, index) => (
                 <ProjectCard key={index} project={project} />

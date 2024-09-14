@@ -5,20 +5,6 @@
   margin: 20px 0;
 }
 
-.projects__title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font--medium);
-  text-align: center;
-  margin-bottom: var(--mb-1-5);
-}
-
-.projects__subtitle {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font--normal);
-  margin-bottom: var(--mb-1);
-  text-align: center;
-}
-
 .projects-container {
     grid-template-columns: repeat(2, 350px);
     padding: 20px;
