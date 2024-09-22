@@ -13,19 +13,19 @@ const Contact = () => {
 
                     <div className='contact__info'>
                         <div className='contact__card'>
-                            <i className='bx bx contact__card-icon'></i>
+                            <i class='bx bxs-contact' ></i>
 
                             <div>
                                 <h3 className='contact__card-title'>Call Me</h3>
                                 <span className='contact__card-data'>+1 980 345 0767</span>
 
-                                <a href='#' className='contact__button'>Write me{" "}
-                                <i className='bx bx-right-arrow-alt conatct__button-icon'></i></a>
+                                <a href='mailto:kowshikmosalakanti@gmail.com' className='contact__button'>Write me{" "}
+                                <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                             </div>
                         </div>
 
                         <div className='contact__card'>
-                            <i className='bx bx contact__card-icon'></i>
+                            <i className='bx bx-mail-send contact__card-icon'></i>
 
                             <div>
                                 <h3 className='contact__card-title'>Email</h3>
@@ -34,21 +34,19 @@ const Contact = () => {
                                 <a href='mailto:kowshikmosalakanti@gmail.com' 
                                 className='contact__button'>
                                     Write me{" "}
-                                <i className='bx bx-right-arrow-alt conatct__button-icon'></i></a>
+                                <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                             </div>
                         </div>
 
                         <div className='contact__card'>
-                            <i className='bx bx contact__card-icon'></i>
+                            <i className='bx bxl-whatsapp contact__card-icon'></i>
 
                             <div>
                                 <h3 className='contact__card-title'>Whatsapp</h3>
                                 <span className='contact__card-data'>+1 980 345 0767</span>
 
-                                <a href='#' 
-                                className='contact__button'>
-                                    Write me{" "}
-                                <i className='bx bx-right-arrow-alt conatct__button-icon'></i></a>
+                                <a href='https://api.whatsapp.com/send?phone=9803450767&text=Hello, more information!' className='contact__button'>Write me{" "}
+                                <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                             </div>
                         </div>
                     </div>

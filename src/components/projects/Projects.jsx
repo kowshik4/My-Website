@@ -27,6 +27,7 @@ const projects = [
 
   const ProjectCard = ({ project }) => (
     <div className="project-card">
+      <div className="project__content">
       <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
       <h3>{project.title}</h3></a><br />
       <br></br><p>{project.description}</p>
@@ -34,6 +35,7 @@ const projects = [
       <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
         View Project
       </a>
+      </div>
     </div>
   );
 

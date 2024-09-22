@@ -9,7 +9,6 @@ const Timeline = ({ experiences }) => {
       <div className="timeline-line"></div>
         {experiences.map((exp, index) => (
           <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
-            <div className="timeline-dot"></div>
             <div className={`timeline-date ${index % 2 === 0 ? 'right' : 'left'}`}>{exp.duration}</div>
             <div className="timeline-content">
               <h3>{exp.role}</h3>
